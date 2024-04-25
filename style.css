@@ -1,0 +1,295 @@
+* {
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+
+h1 {
+    font-family: 'dancing script', cursive ;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 4em;
+    font-style: italic;
+    color: goldenrod;
+}
+
+h2,h5{
+    font-family: 'Open Sans', sans-serif;
+    color: blue;
+}
+
+h3 {
+    text-align: left;
+    color: #ffd700;
+}
+ 
+h4 {
+    text-align: center;
+    color: #706b4c;
+    font-family: 'dancing script', cursive ;
+    text-transform: uppercase;
+}
+
+nav {
+    background-color: #146eb4;
+    border-top: 3px solid burlywood;
+    border-bottom: 3px solid burlywood;
+    padding: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+nav ul li a {
+    padding-right: 25px;
+    text-decoration: none;
+}
+
+nav li {
+    display: inline;
+    
+}
+
+nav a:link {
+    color:#FFFFFF;
+}
+
+nav a:visited {
+    color:#FFFFFF;
+}
+
+nav a:hover {
+    color:#ffd700;
+}
+
+nav a:active {
+    color:#d3d3d3;
+}
+
+#homehero {
+    /*background-image: url(images/leaves.png);*/
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color:#232f3e;
+}
+
+#homehero h1 {
+    text-align: center;
+    color: rgb(67, 106, 122);
+    text-shadow: 4px 2px 2px greenyellow;
+    margin: 0;
+    padding: 30px;
+}
+
+.gallery-thumbnails {
+    border-radius:5px;
+}
+
+.gallery .preview {
+    width:100%;
+}
+
+.gallery .gallery-thumbnails img {
+    width:100px;
+    height:75px;
+    margin: 3px 10px 10px 0;
+}
+
+.gallery .gallery-thumbnails img:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.gallery .preview img#preview {
+    padding: 1px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto !important;
+    display: block !important;
+}
+
+
+.home-photo {
+    border-radius: 20px;
+    width: 90%;
+    height: 80%;
+    margin: 60px;
+
+}
+
+.image-fluid {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    margin: 15px;
+    padding: 10px;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+main {
+    max-width: 1100px;
+    margin: 20px auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.center-text {
+    text-align: center;
+    font-weight: 700;
+}
+
+.myButton {
+    background-color: #706b4c;
+    border-radius: 10px;
+    display: inline-block;
+    color: aliceblue;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 20px;
+    border: 2px solid #000000;
+    padding: 10px 20px;
+    background-color: goldenrod;
+
+}
+
+/* Default styles */
+.game-controls {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.game-controls {
+    margin: 30px 30px 30px 30px;
+    text-align: center;
+}
+
+canvas {
+    background-color: #3b250a;
+    margin: 0 auto;
+    display: block;
+    background-image: url(images/peace.jpg);
+    background-repeat: no-repeat;
+    border: 3px solid purple;
+    box-shadow: 5px 5px 5px 5px goldenrod;
+}
+
+footer {
+    border-top: 1px solid gray;
+    padding: 10px;
+    clear: both;
+    color: #000000;
+    background-color: #000000;
+}
+
+footer a {
+    text-decoration: none;
+    color: #f5f5f5;
+    text-align: left;
+}
+
+h1{
+    font-size: 3em;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+}
+
+.shadow {
+    box-shadow: 15px 10px ;
+    border: 1px dashed gray;
+}
+
+.resume-content {
+    border-left: 5px solid #b5b8b0;
+    padding: 20px;
+}
+
+footer .footer-bottom {
+    background-color: #146eb4;
+    padding: 5px;
+    margin: -10px;
+    text-align: center;
+
+}
+
+footer p {
+    color: #f5f5f5;
+}
+
+footer a {
+    text-align: left;
+}
+
+/* CSS Adjustments for Macbook and Tablets screnn size */
+@media only screen and (max-width: 2560px) {
+h1{
+    font-size: 1.8em;
+}
+
+.home-photo {
+    border-radius: 40px;
+    width: 90%;
+    height: 80%;
+    margin: 60px;
+}
+
+p {
+    margin: 20px 10px 10px 20px;
+}
+
+}
+/* CSS Adjustments for Smartphones */
+@media only screen and (max-width: 830px) {
+h1{
+    font-size: 1.5em;
+}
+.home-photo {
+    border-radius: 45px;
+    width: 85%;
+    height: 85%;
+    margin: 40px;
+}
+
+p {
+    margin: 20px 20px 20px 20px;
+}
+
+footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 5px;
+}
+}
+/* JavaScript Game changes for mobile */
+.mobile{
+	display:none;
+}
+@media only screen and (max-width: 768px){
+	.desktop{
+		display:none;
+	}
+	.mobile{
+		display: block;
+		touch-action: manipulation;
+	}
+
+}
